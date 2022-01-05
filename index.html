@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>MiCita | Inicio</title>
+    <!--'rel' The rel attribute defines the relationship between a linked resource and the current document-->
+    <link rel="stylesheet" href="./css/style.css">
+    <div>Iconos diseñados por <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a></div>
+  </head>
+
+  <body>
+    <div class="formulario">
+      <div class="form-banner">
+        <div>
+          <img src="./images/logo-app.png" class="logo-app"/>
+        </div>
+        <div>
+          <img src="./images/logo-business.png" class="logo-business" />
+        </div>
+      </div>
+
+
+      <div class="form-header">
+        <h1>ENTRAR AL SISTEMA</h1>
+      </div>
+
+      <div class="formulario-body">
+        <form action="./pages/menu.html">
+          <div class="form-field">
+            <label>Escribir DNI o correo electrónico</label>
+            <input type="text" id="username" name="username" required="required"/>
+          </div>
+          <div class="form-field">
+            <label>Escribir Contraseña</label>
+            <input type="password" id="password" name="password" required="required"/>
+          </div>
+          <div class="login-button">
+            <a href="./pages/menu.html">
+              <button type="submit">Entrar</button>
+            </a>
+          </div>
+        </form>
+      </div>
+
+    </div>
+
+    <div class="secundario">
+      <div class="secundario-header">
+        <label>¿No tienes cuenta en MiCita?</label>
+      </div>
+      <div class="secundario-button">
+        <a href="./pages/register.html">
+          <button>REGISTRAR</button>
+        </a>
+
+      </div>
+    </div>
+
+  </body>
+</html>

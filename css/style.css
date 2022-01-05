@@ -1,0 +1,609 @@
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  /*background: linear-gradient(45deg, rgba(66, 183, 245, 0.8) 0%, rgba(66, 245, 189, 0.4) 100%);*/
+  background: #fcff82;
+  color: rgba(0, 0, 0, 0.6);
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.6em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.formulario {
+  z-index: 15;
+  position: relative;
+  background: #FFFFFF;
+  width: 600px;
+  border-radius: 16px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  margin: 100px auto 10px;
+  overflow: hidden;
+  padding: 60px;
+  padding-top: 10px;
+}
+
+.form-header {
+  margin: 0 0 40px;
+  text-align: center;
+  color: #4285F4;
+  font-size: 15px;
+}
+
+.form-field {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 0 36px;
+}
+
+.form-field label {
+  display: block;
+  margin: 0 0 10px;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.form-field input {
+  outline: none;
+  display: block;
+  background: rgba(0, 0, 0, 0.1);
+  width: 100%;
+  border: 0;
+  border-radius: 6px;
+  box-sizing: border-box;
+  padding: 12px 20px;
+  color: rgba(0, 0, 0, 0.6);
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 500;
+  line-height: inherit;
+  transition: 0.3s ease;
+}
+
+.login-button button {
+  outline: none;
+  background: #4285F4;
+  width: 100%;
+  border: 0;
+  border-radius: 4px;
+  padding: 12px 20px;
+  color: #FFFFFF;
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: inherit;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin: 20px 0px 0px;
+}
+
+.secundario {
+  position: relative;
+  text-align: center;
+  width: 700px;
+  margin: 20px auto;    /*Estudiar propiedad 'auto'*/
+  box-sizing: border-box;
+  padding: 60px;
+}
+
+.form-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-app {
+  width: 150px;
+  /*margin: 0px auto;*/
+  margin-left: 0;
+  margin-right: auto;
+  display: block;
+}
+
+.logo-business {
+  width: 150px;
+  margin: 0px auto;
+  margin-right: 0;
+  display: block;
+}
+
+.secundario-header {
+  font-size: 24px;
+  margin: 20px;
+
+}
+
+.secundario-button button {
+  outline: none;
+  background: #4285F4;
+  width: 100%;
+  border: 0;
+  border-radius: 8px;
+  padding: 16px 20px;
+  color: #FFFFFF;
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: inherit;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+#register-button {
+  font-family: 'Poppins', sans-serif;
+  width: 250px;
+}
+
+.signup-checkbox {
+  display: flex;
+}
+
+.signup-checkbox p{
+  margin-top: inherit;
+}
+
+a:-webkit-any-link{
+  text-decoration:none !important;    /* do not underline links */
+  color: black; !important;           /* give links a default color */
+}
+
+.wrapper {
+  margin: 10em;                   /* just a temp margin */
+  border: 0.1em solid #ccc;   /* wrap the calendar inside a box */
+  width: 20em;                /* define a width for the box */
+  height: 24em;               /* define a height for the box */
+  box-shadow: 0.1em 0.2em 0.8em #ccc; /* box shadow for better view */
+  background: #FFFFFF;
+  margin-top: 50px;
+
+}
+
+.header {
+  height: 4em;                    /* define a height for the header */
+  background-color: #3f51b5;      /* give the header a background color */
+  color: white;                   /* give the header a text color */
+  text-align: center;             /* center the text inside the header */
+}
+
+.calendar-body .col-xs-1 {
+  width: 2.5em;                   /* give each column a fixed width */
+  margin-left: 0.2em;             /* have some space between columnd */
+  text-align: center;             /* align text in the center */
+}
+
+.header p {
+    padding-top: 1.2em;             /* vertical centering */
+    font-family: fantasy;
+    font-size: 25px;
+    text-transform: uppercase;      /* all caps text  */
+  }
+
+.header span {
+    padding: 1.3em;         /* vertical and horizontal centering icons */
+}
+
+.inactive {                 /* inactive dates get a light gray text color */
+    color: #ccc;
+}
+
+.weekdays {
+    padding: 1em;           /* giving weekdays some space around */
+}
+
+.dates {
+    padding: 0.2em 1em 0.2em 1em;   /* giving dates some space  */
+}
+
+.line {                             /* a gray line separator  */
+    height: 0.1em;
+    border: 0.1em solid #EEEEEE;
+}
+
+.current-date {                 /* styling the current date section  */
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0.7em;
+}
+
+.calendar-body .row .col-xs-1 p:hover {
+    color: #4778a6;         /* hover state on all dates  */
+}
+
+.button-box {
+  text-align: center;
+}
+
+.button-box button{
+  background: #4285F4;
+  border: 0;
+  width: 30%;
+  padding: 15px;
+  border-radius: 4px;
+  font-size: 20px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin: 10px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+}
+
+.delete-warning-message {
+  padding-top: 80px;
+  text-align: center;
+  font-family: 'Bebas Neue';
+  color: #696969;
+}
+
+.dwm-1 {
+  font-size: 70px;
+}
+
+.dwm-2 {
+  font-size: 40px;
+  line-height: 1;
+}
+
+#eliminar-cita-button {
+  background:#ff4949;
+}
+
+.big-message {
+  font-family: 'Bebas Neue';
+  padding-top: 0px;
+  padding-bottom: 10px;
+  margin-left: 30px;
+  font-size: 50px;
+}
+
+.big-message-center {
+  font-family: 'Bebas Neue';
+  padding-top: 0px;
+  padding-bottom: 10px;
+  margin-left: 30px;
+  font-size: 50px;
+  text-align: center;
+}
+
+.bm-1 {
+  font-size: 60px;
+}
+
+.bm-1 p {
+  margin-bottom: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.bm-2 {
+  font-size: 40px;
+}
+
+.bm-2 p {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.cita-reservada-message {
+  text-align: center;
+  padding: 10px;
+  line-height: normal;
+  margin-top: 50px;
+
+}
+
+.cita-reservada-message p{
+  height: 40px;
+}
+
+.delete-options-group {
+  margin: 30px;
+}
+
+.delete-option-container {
+  display: flex;
+}
+
+.delete-option-container button{
+  outline: none;
+  width: 180px;
+  background: #4285F4;
+  border: 0;
+  border-radius: 8px;
+  padding: 12px 20px;
+  color: #FFFFFF;
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: inherit;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin: 20px;
+  margin-left: 30px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+.doc-text {
+    padding-top: 34px;
+    font-family: 'Bebas Neue';
+}
+
+.doc-text p{
+  font-size: 40px;
+  display: inline;
+}
+
+.bb-volver-inicio {
+  text-align: left;
+  margin-left: 50px;
+}
+
+#volver-inicio {
+  background: #e8630a;
+  width: 250px;
+}
+
+.go-menu-group {
+  padding-top: 10px;
+}
+
+.go-menu-text {
+  margin-left: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: 'Bebas Neue';
+  font-size: 40px;
+  padding: : 10px;
+}
+
+.go-menu-text p{
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.appointment-displayer {
+}
+
+.ad-field {
+  display: flex;
+  margin-top: 20px;
+  margin-left: 20%;
+  margin-bottom: 20px;
+}
+
+.ad-field:last-child {
+  margin-bottom: 60px;
+}
+
+.ad-field-name {
+  background: #ff6f3c;
+  padding: 20px;
+  border-radius: 4px;
+  width: 170px;
+
+}
+
+.ad-field-name p{
+  color: #FFFFFF;
+  font-family: arial;
+  font-size: 30px;
+  margin: 0px;
+}
+
+.ad-field-value {
+  padding: 30px;
+  margin-left: 10px;
+}
+
+.ad-field-value p{
+  font-family: 'Bebas Neue';
+  font-size: 50px;
+  margin: 0px;
+}
+
+#b-cancelar-cita {
+  background: #f95959;
+  padding: 24px;
+  font-size: 24px;
+  width: 30%;
+
+}
+
+#b-no-cancelar {
+  padding: 30px;
+  font-size: 16px;
+  width: 20%;
+}
+
+.choose-from-list {
+  display: flex;
+  margin-left: 40px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.choose-from-list p{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 40px;
+}
+
+.cfl-list {
+  margin-left: 20px;
+  padding: 10px;
+}
+
+.cfl-list option{
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+}
+
+.elegir-medico-fecha {
+    margin-top: 60px;
+}
+
+.regular-message {
+  font-family: 'Bebas Neue', sans-serif;
+  text-align: center;
+  font-size: 36px;
+}
+
+.regular-message-left {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.flex-text {
+  display: flex;
+}
+
+.doctor-list-box {
+  background: #FFFFFF;
+  margin-left: 50px;
+  border-radius: 8px;
+  padding: 20px;
+  width: 1000px;
+}
+
+.dlb-row {
+  background: #FFFFFF;
+  display: flex;
+  padding: 15px;
+}
+
+.dlb-doctor {
+  background: #FAEBD7;
+  padding: 10px;
+
+}
+
+.doctor-icon {
+  width:120px;
+  padding: 10px 40px 10px;
+}
+
+.dlb-doctor-name {
+  font-size: 20px;
+  text-align: center;
+}
+
+.colored-background {
+  background: #fdffcd;
+  padding: 20px;
+  width: 1200px;
+}
+
+#pantalla-dividida {
+  display: flex;
+}
+
+.izquierda {
+  background: #fcff82;
+  width: 50%;
+}
+
+.derecha {
+  background: #fcff82;
+  width: 50%;
+}
+
+.calendar {
+}
+
+.citas-por-calendario {
+  background: #FFEBCD;
+  margin: 30px;
+  width: 90%;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+.cpc-texto{
+  text-align: center;
+  font-size: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.cpc-texto p{
+  margin: 10px;
+}
+
+.cpc-container {
+  display: flex;
+}
+
+.cpc-cita-n {
+  display: flex;
+  padding-right: 20px;
+  border-radius: 4px;
+  margin-left: 15px;
+  margin-bottom: 10px;
+  color: #404040;
+}
+
+.cpc-cita-n input {
+  position: relative;
+  left: 5%;
+}
+
+.cpc-cita-n:last-child input {
+  left: 10%;
+}
+
+
+#cpc-button {
+  width: 180px;
+  margin-left: 30px;
+}
+
+.capsuled-text {
+  background: #FAEBD7;
+  border-radius: 8px;
+  width: 400px;
+  padding: 1px 5px 1px;
+  margin: 10px auto 10px;
+}
+
+.menu-button-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px auto 10px;
+  background: #FFFFFF;
+  width: 65%;
+  padding: 30px;
+  border-radius: 16px;
+}
+
+.menu-button-group button{
+  color: #3e4444;
+}
+
+.mbp-column {
+  padding-left: 100px;
+}
+
+#menu-button {
+  background: #ffcc5c;
+  width: 300px;
+  padding: 20px;
+}
+
+#exit-button {
+  background: #ff4949;
+}
